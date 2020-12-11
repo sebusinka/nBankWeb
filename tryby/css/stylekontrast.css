@@ -1,0 +1,420 @@
+body{
+    background-color: #000a18;
+    margin: 0;
+    color: yellow;
+}
+#waluting{
+   font-size: 1.2rem;
+   font-family: 'Open Sans', sans-serif;  
+}
+#lista{
+    font-size: 1.2rem;
+    font-family: 'Open Sans', sans-serif;  
+}
+#tryb{
+    display: inline-block;
+    margin-right: 2rem;
+}
+input, textarea{
+    color: yellow;
+}
+
+#dla{
+    min-width: 14rem;
+}
+#text{
+    color: yellow;
+}
+#ile{
+    min-width: 14rem;
+}
+#domownicy{
+    min-width: 14rem;
+}
+#kredyt{
+    min-width: 14rem;
+}
+hr{
+    border: 1px solid yellow;
+}
+#button{
+    color: yellow;
+    cursor: pointer;
+    outline: none;
+    background-color:#000a18;
+    border: 0;
+    letter-spacing: 0.15em;
+    display: inline-block;
+    padding: 15px 20px;
+    font-family: 'Open Sans', sans-serif;  
+    text-align: left;
+    position: relative;
+}   
+#button1{
+    color: #000a18;
+    border: 0;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 15px 20px;
+    font-family: 'Open Sans', sans-serif;  
+    text-align: left;
+    position: relative;
+}   
+.button2{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.menu-mobile ul li{
+    list-style-type: none;
+}
+#button:after{
+    bottom: 0;
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#button1:after{
+    bottom: 0;
+    content: " ";
+    display: inline-block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: red;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#button:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+#button1:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+.menu{
+    width: 100%;
+}
+.menu-mobile
+{
+    width: 100%;
+}
+#benk{
+    text-align: right;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-left: auto;
+
+}
+.content{
+    width: 100%;
+}
+#content-1{
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+#content-1 img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-mobile{
+    display: none;
+}
+.menu-mobile-button{
+    width: 40px;
+    height: 40px;
+    border: 0;
+    border-top: 5px solid#000a18;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    outline: none;
+}
+
+.menu-mobile-button::before, .menu-mobile-button::after
+{
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 5px solid #000a18;
+    transform: translateY(10px);
+}
+
+.menu-mobile-button::after{
+    transform: translateY(25px);
+    transition: 0.5s transform linear;
+}
+
+.menu-mobile-button:focus{
+    transform: rotate(45deg);
+    border: none;
+
+}
+
+.menu-mobile-button:focus:after{
+    transform: rotate(-90deg) translateX(-10px);
+}
+
+
+.menu-mobile-unwrap
+{
+    float: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 9.8rem;  
+    padding-bottom: 0.7rem;
+    width: 100%;
+    background-color: #eeb50a;
+    transform: translateX(-5000px);
+    transition: 1.3s transform ease;
+    z-index: 1;
+   
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+    
+
+.menu-mobile-unwrap a:hover
+{
+    text-decoration: none;
+    z-index: 1;
+}
+.menu-mobile-button:focus ~ .menu-mobile-unwrap, .menu-mobile-unwrap:hover
+{
+    transform: translateX(0);
+
+}
+
+.content-przelew #saldo{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif; 
+}
+#saldo1{
+    color: yellow;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif; 
+
+}
+#numerkonta{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.content-register{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5rem;
+    font-family: 'Open Sans', sans-serif; 
+    margin-top: 6rem;
+
+
+}
+
+#saldo1 input{
+    background-color: transparent;
+    font-size: 1.5rem;
+    width: 20%;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid yellow;
+    outline: none;
+    -webkit-transition: 0.1s;
+    transition: 0.5s;
+}
+#saldo1 input:focus{
+    border-bottom: 2px solid red;
+}
+#saldo1 input::placeholder{
+    color: #888800;
+}
+
+
+
+.button-cont{
+        margin: 0;
+        margin-top: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto', sans-serif;
+        flex-direction: column;
+    }
+
+#container {
+	position: relative;
+	transform: scale(1.25)
+}
+#container:hover {
+	cursor: pointer;
+}
+#container * {
+	position: absolute;
+	top: 0;
+	left: -25px
+}
+
+#Path-1,
+#Path-2,
+#Path-3,
+#Path-4,
+#Path-5 {
+	stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+/* 	animation-play-state: paused; */
+}
+.animate-path {
+	animation: 0.8s fingerprint_animation ease-in forwards;
+}
+.animate-path-delay {
+	animation: 0.8s fingerprint_animation ease-in forwards;
+	animation-delay: 0.1s
+	
+}
+#text {
+	margin-top: 100px;
+	transform: scale(1.23);
+/* 	animation-play-state: paused; */
+}
+.animate-text {
+	animation: 0.5s fadeout linear forwards;
+}
+#check {
+	animation-delay: 0.3s;
+}
+.animate-check {
+	animation: 0.5s check_animation linear forwards;
+}
+#checkmark {
+	position: absolute;
+	left: -5px;
+	top: 0px;
+}
+#Oval {
+	stroke-dasharray: 200px;
+	stroke-dashoffset: 200;
+	opacity: 0;
+	transform: rotate(-75deg);
+	transform-origin: 30px 30px;
+/* 	animation-play-state: paused; */
+}
+.animate-oval {
+	animation: 0.5s circle_animation 0.2s ease-in forwards;
+}
+@keyframes fingerprint_animation {
+	50% {
+		stroke-dashoffset: -100;
+	}
+	60% {
+		stroke-opacity: 0;
+	}
+	100% {
+		stroke-dashoffset: -200;
+		stroke-opacity: 0;
+	}
+}
+
+@keyframes fadeout {
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes circle_animation {
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		stroke-dasharray: 400px;
+		transform: rotate(40deg);
+	}
+}
+
+@keyframes check_animation {
+	0% {
+		stroke-dasharray: 126;
+		stroke-dashoffset: 126;
+		
+	}
+	100% {
+		stroke-dasharray: 45;
+		stroke-dashoffset: 94
+	}
+}
+
+.bliczek{
+    color: yellow;
+    border: 1px solid yellow;
+    max-width: max-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    float: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#xdd{
+
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media only screen and (max-width:990px){
+    #content-1 img{
+        max-width: 100%;
+        width: 100%;
+    }
+    .menu{
+        display: none;
+    }
+
+    .menu-mobile{
+    margin-top: -9px;
+    display: flex;
+    justify-content: center;
+    float: center;
+    background-color:  #e4242f;
+    padding: 20px 0;
+    }
+    }
+

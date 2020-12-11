@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/niggericon.png">
+    <title>nBank</title>
+	  <link rel="stylesheet" href="css/firmastyle.css">
+    <script src="script.js"></script>
+  
+    <title>nBank</title>
+
+  </head>
+
+  <body onload="wyswietlosob()">
+    <div id="benk">
+      <a href = "tryby/indexduzy.html"><img src = "img/big.png" id="tryb" width="30px"></a>
+      <a href = "tryby/indexkontrast.html"><img src = "img/kontrast.png" id="tryb" width="30px"></a>
+      <a href = "index.html"><img src ="img/niggerbank.png" width=130px;></a>
+    </div>
+    <hr>
+<div class="menu">
+      <ul>
+        <li><a href = "index.html" id="button">STRONA GŁÓWNA</a></li>
+        <li><a href = "#przelew" id="button">PRZELEW</a></li>
+        <li><a href = "#kredyt" id="button">KREDYT</a></li>
+        <li><a href = "firma.html" id="button">KONTO FIRMOWE</a></li>
+      </ul>
+    </div>
+
+
+    <div class="menu-mobile">
+     <button class = "menu-mobile-button"></button>
+      <div class="menu-mobile-unwrap">
+      <ul>
+        <li><a href = "index.html" id="button1">STRONA GŁÓWNA</a></li>
+        <li><a href = "#przelew" id="button1">PRZELEW</a></li>
+        <li><a href = "#kredyt" id="button1">KREDYT</a></li>
+        <li><a href = "firma.html" id="button1">KONTO FIRMOWE</a></li>
+      </ul>
+    </div>
+    </div>
+
+
+    <div class = "content">
+
+      
+      <div class = "content-przelew">
+         <div id = "saldo1">Twoje saldo wynosi:</div>
+
+      </div>
+      <div id = "saldo1"><div id = "saldo"></div><br></div>
+      <div id = "saldo1">Twój numer konta: <br/><div id = "numerkonta"></div></div>
+
+    <br/><br/><div id = "saldo1">Twój numer <img src = "img/blik.png" style="vertical-align:middle"; width="65px"></div> <br/><div class = "bliczek"><div id="blik"></div></div><br/>
+      <div class = "button2"><button onclick="blik()" id="button">Wygeneruj nowy kod blik</button><br></div>
+<br/>
+<hr>
+<br/>
+
+
+  <section id = "przelew">
+      <div id = "saldo1">Numer konta odbiorcy: <br/> <input type="text" id="dla" placeholder="26 cyfrowy numer konta"><p></p></div>
+      <div id = "saldo1">Kwota: <br/> <input type="text" id="ile" placeholder="Kwota przelewu"><p></p></div>
+      <div class = "button2"><button onclick="przelewosob()" id="button">Przelej</button></div>
+      <div id= "saldo1"><div id="przelewwynik"></div><p></p></div>
+  
+</section>
+    <br/>
+    <hr>
+    <br/>
+
+      <div id = "saldo1">Przychody netto: <br/> <input type="text" id="kredyt" placeholder="Zarobki netto"><p></p></div>
+      <div id = "saldo1">Miesięczne wydatki:<br/> <input type="text" id="wydatki" placeholder="Miesięczne wydatki"><p></p></div>
+      <div id = "saldo1">Pożądana kwota kredytu: <br/> <input type="text" id="ilechcesz" placeholder="Pożądana kwota kredytu"><p></p></div>
+      <div id = "saldo1">Ilość rat: <br/> <input type="text" id="ilerat" placeholder="Ilość rat"><p></p></div>
+
+      <section id = "kredyt">
+      <div class = "button2"><button onclick="kredyt()" id = "button">Weź kredyt!</button></div>
+      <div id= "saldo1"><div id="kredytwynik"></div><p></p></div>
+  </section>
+
+
+
+    <script src="./renderer.js"></script>
+
+  </body>
+</html>

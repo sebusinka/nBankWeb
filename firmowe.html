@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/niggericon.png">
+    <title>nBank</title>
+	  <link rel="stylesheet" href="css/firmastyle.css">
+    <script src="script.js"></script>
+  
+    <title>nBank</title>
+
+  </head>
+    <body onload="wyswietlfirm()">
+    <div id="benk">
+      <a href = "tryby/indexduzy.html"><img src = "img/big.png" id="tryb" width="30px"></a>
+      <a href = "tryby/firmakontrast.html"><img src = "img/kontrast.png" id="tryb" width="30px"></a>
+      <a href = "firma.html"><img src ="img/niggerfirma.png" width=130px;></a>
+    </div>
+    <hr>
+<div class="menu">
+      <ul>
+        <li><a href = "firma.html" id="button">STRONA GŁÓWNA</a></li>
+        <li><a href = "#przelew" id="button">PRZELEW</a></li>
+        <li><a href = "#walutowanie" id="button">PRZEWALUTOWANIE</a></li>
+        <li><a href = "index.html" id="button">KONTO OSOBISTE</a></li>
+      </ul>
+    </div>
+
+
+    <div class="menu-mobile">
+     <button class = "menu-mobile-button"></button>
+      <div class="menu-mobile-unwrap">
+      <ul>
+        <li><a href = "firma.html" id="button1">LOGOWANIE</a></li>
+        <li><a href = "#przelew" id="button1">PRZELEW</a></li>
+        <li><a href = "#walutowanie" id="button1">PRZEWALUTOWANIE</a></li>
+        <li><a href = "index.html" id="button1">KONTO OSOBISTE</a></li>
+      </ul>
+    </div>
+    </div>
+
+
+    <div id ="saldo1">Twoje saldo wynosi:</div>
+
+  </div>
+  <div id ="saldo1"><div id = "saldo"></div></div>
+  <div id ="saldo1"><div id = "saldo2"></div></div>
+  <div id ="saldo1"><div id = "saldo3"></div></div>
+  <div id ="saldo1"><div id = "saldo4"></div></div>
+
+  <div id = "saldo1"><div id = "saldo"></div><br></div>
+  <div id = "saldo1">Twój numer konta: <br/><div id = "numerkonta"></div><p></p>
+  <div id = "numerkonta"></div><p></p>
+
+
+  <br/>
+<hr>
+<br/>
+
+<div id ="saldo1">Wybierz walutę jaką chcesz przelać:
+  <select id="waluting">
+   
+   <option>PLN</option>
+   <option>EUR</option>
+   <option>USD</option>
+   <option>GBP</option>
+ </select></div><br>
+
+ <section id = "przelew">
+  <div id = "saldo1">Numer konta odbiorcy: <br/> <input type="text" id="dla" placeholder="26 cyfrowy numer konta"><p></p></div>
+  <div id = "saldo1">Kwota: <br/> <input type="text" id="ile" placeholder="Kwota przelewu"><p></p></div>
+  <div class = "button2"><button onclick="przelew()" id="button">Przelej</button></div>
+  <div id= "saldo1"><div id="przelewwynik"></div><p></p></div>
+</section>
+
+<br/>
+<hr>
+<br/>
+  <div id ="saldo1">Wybierz jaką walutę chcesz otrzymać: <select id="lista">
+    <option>EUR</option>
+    <option>USD</option>
+    <option>GBP</option>
+  </select></div>
+
+  <section id = "walutowanie">
+    <div id ="saldo1">Ile danej waluty chcesz otrzymać: <br/> <input type="text" id="kwota"><p></p></div>
+<div class="button2">
+  <button onclick="exchange()" id = "button">Sprawdź</button>
+  <button onclick="exchange2()" id = "button">Przewalutuj</button>
+  <div id ="saldo1"><div id="exchangewynik"></div></div>
+  <div id ="saldo1"><div id="exchangewynik2"></div></div>
+
+  </div>
+
+  </section>
+<br/>
+<hr>
+<br/>
+
+    <script src="./renderer.js"></script>
+
+  </body>
+</html>
